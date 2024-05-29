@@ -12,6 +12,11 @@ header {
 
 .logo img{
    width: 70px;
+   transition: 1s;
+}
+
+.logo img:hover{
+   opacity: 0.5;
 }
 
 .header-navigation {
@@ -37,11 +42,6 @@ header {
 .pags a {
    color: black;
    text-decoration: none;
-   transition: 0.3s;
-}
-
-.pags a:hover{
-   opacity: 0.7s;
 }
 
 main {
@@ -52,15 +52,15 @@ main {
 
 .slider {
    margin: 0 auto;
-   width: 800px;
-   height: 400px;
+   width: 1000px;
+   height: 600px;
    overflow: hidden;
 }
 
 .slides {
    display: flex;
    width: 400%;
-   height: 400px;
+   height: 600px;
 }
 
 .slides input{
@@ -68,18 +68,28 @@ main {
 }
 
 .slide{
+   display: flex;
+   flex-direction: column;
    width: 25%;
    position: relative;
    transition: 2s;
 }
 
 .slide img {
-   width: 800px;
+   width: 1000px;
+}
+
+.img-desc {
+   width: 600px;
+   background-color: rgb(255, 255, 255, 0.4);
+   border-radius: 10px;
+   text-align: right;
+   font-family: "Montserrat", sans-serif;
 }
 
 .manual-navigation{
    position: absolute;
-   width: 800px;
+   width: 1000px;
    margin-top: -20px;
    display: flex;
    justify-content: center;
@@ -124,8 +134,8 @@ main {
 
 .auto-navigation{
    position: absolute;
-   width: 800px;
-   margin-top: 380px;
+   width: 1000px;
+   margin-top: 580px;
    display: flex;
    justify-content: center;
 }
