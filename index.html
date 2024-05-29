@@ -8,10 +8,49 @@
 </head>
 <body>
    <header>
-      <h1>Início</h1>
+      <nav class="header-navigation">
+         <a class="logo" href="/"><img src="./img/logo-projeto.png" alt="Logo do Futuro à Beira-Mar"></a>
+         <ul class="nav-list">
+            <li class="pags"><a href="./pags/about.html">Sobre</a></li>
+            <li class="pags"><a href="./pags/calendar.html">Agenda</a></li>
+            <li class="pags"><a href="./pags/relacts.html">Relatos</a></li>
+            <li class="pags"><a href="./pags/login.html">Login</a></li>
+         </ul>
+      </nav>
    </header>
    <main>
-      <h1>meio</h1>
+      <div class="slider">
+         <div class="slides">
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+            <div class="slide first">
+               <img src="./img/mergulhador.jpg" alt="Primeira imagem">
+            </div>
+            <div class="slide">
+               <img src="./img/treinamento de mergulho.jpeg" alt="Segunda imagem">
+            </div>
+            <div class="slide">
+               <img src="./img/foto-catando-lixo.jpeg" alt="Terceira imagem">
+            </div>
+            <div class="slide">
+               <img src="./img/oficial-voluntario.jpg" alt="Quarta imagem">
+            </div>
+            <div class="auto-navigation">
+               <div class="auto-btn1"></div>
+               <div class="auto-btn2"></div>
+               <div class="auto-btn3"></div>
+               <div class="auto-btn4"></div>
+            </div>
+         </div>
+         <div class="manual-navigation">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+         </div>
+      </div>
    </main>
    <footer>
       <h1>rodape</h1>
