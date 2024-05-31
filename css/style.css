@@ -6,12 +6,16 @@
    box-sizing: border-box;
 }
 
+:root {
+   --main-color: #0b80c9;
+}
+
 header {
    padding: 0 10px;
 }
 
 .logo img{
-   width: 8vh  ;
+   width: 11vh  ;
    transition: 1s;
 }
 
@@ -26,12 +30,13 @@ header {
    align-items: center;
    font-family: "Montserrat", sans-serif;
    font-weight: 400;
-   height: 8vh;
+   height: 12vh;
 }
 
 .nav-list {
    list-style: none;
    display: flex;
+   align-items: center;
 }
 
 .pags {
@@ -44,10 +49,20 @@ header {
    text-decoration: none;
 }
 
+.pags a:hover{
+   border-bottom: 1px var(--main-color);
+}
+
 main {
    background: url("../img/background.jpg") no-repeat center center;
    background-size: cover;
-   height: 92vh;
+}
+
+#main-index {
+   display: grid;
+   grid-template-columns: 1fr;
+   gap: 40px;
+   padding: 20px;
 }
 
 .slider {
@@ -91,7 +106,7 @@ main {
 .manual-navigation{
    position: absolute;
    width: 1000px;
-   margin-top: 10px;
+   margin-top: 610px;
    display: flex;
    justify-content: center;
 }
@@ -126,7 +141,7 @@ main {
 }
 
 .auto-navigation div{
-   border: 2px solid #0b80c9;
+   border: 2px solid var(--main-color);
    padding: 5px;
    border-radius: 10px;
    cursor: pointer;
@@ -156,4 +171,17 @@ main {
 }
 #radio4:checked ~ .auto-navigation .auto-btn4{
    background-color: #FFF;
+}
+
+.about {
+   font-family: "Montserrat", sans-serif;
+   color: #FFF;
+}
+
+.about h1{
+   font-size: 50px;
+}
+
+.about p {
+   font-size: 25px;
 }
