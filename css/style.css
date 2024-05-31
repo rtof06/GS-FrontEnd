@@ -11,7 +11,7 @@ header {
 }
 
 .logo img{
-   width: 70px;
+   width: 8vh  ;
    transition: 1s;
 }
 
@@ -70,6 +70,7 @@ main {
 .slide{
    display: flex;
    flex-direction: column;
+   align-items: end;
    width: 25%;
    position: relative;
    transition: 2s;
@@ -90,7 +91,7 @@ main {
 .manual-navigation{
    position: absolute;
    width: 1000px;
-   margin-top: -20px;
+   margin-top: 10px;
    display: flex;
    justify-content: center;
 }
@@ -135,7 +136,7 @@ main {
 .auto-navigation{
    position: absolute;
    width: 1000px;
-   margin-top: 580px;
+   margin-top: 610px;
    display: flex;
    justify-content: center;
 }

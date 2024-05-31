@@ -1,76 +1,90 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="./css/style.css">
    <title>Início</title>
 </head>
+
 <body>
    <header>
       <nav class="header-navigation">
          <a class="logo" href="/"><img src="./img/logo-projeto.png" alt="Logo do Futuro à Beira-Mar"></a>
          <ul class="nav-list">
-            <li class="pags"><a href="./pags/about.html">Sobre</a></li>
+            <li class="pags"><a href="./index.html">Início</a></li>
             <li class="pags"><a href="./pags/calendar.html">Agenda</a></li>
             <li class="pags"><a href="./pags/relacts.html">Relatos</a></li>
+            <li class="pags"><a href="./pags/team.html">Time</a></li>
             <li class="pags"><a href="./pags/login.html">Login</a></li>
          </ul>
       </nav>
    </header>
    <main>
-      <div class="slider">
-         <div class="slides">
-            <input type="radio" name="radio-btn" id="radio1">
-            <input type="radio" name="radio-btn" id="radio2">
-            <input type="radio" name="radio-btn" id="radio3">
-            <input type="radio" name="radio-btn" id="radio4">
-            <div class="slide first">
-               <img src="./img/mergulhador.jpg" alt="Primeira imagem">
-               <div class="img-desc">
-                  <p>Um mergulhador realizando trabalho de restauração de corais.</p>
-                  <p>Praia do Félix em Pipa-RN</p>
+      <div class="pictures">
+         <div class="slider">
+            <div class="slides">
+               <input type="radio" name="radio-btn" id="radio1">
+               <input type="radio" name="radio-btn" id="radio2">
+               <input type="radio" name="radio-btn" id="radio3">
+               <input type="radio" name="radio-btn" id="radio4">
+               <div class="slide first">
+                  <img src="./img/mergulhador.jpg" alt="Primeira imagem">
+                  <div class="img-desc">
+                     <p>Um mergulhador realizando trabalho de restauração de corais.</p>
+                     <p>Praia do Félix em Pipa-RN</p>
+                  </div>
+               </div>
+               <div class="slide">
+                  <img src="./img/treinamento de mergulho.jpeg" alt="Segunda imagem">
+                  <div class="img-desc">
+                     <p>Bombeiros mergulhadores certificados realizando treinamento.</p>
+                     <p>Base de treinamento em São Paulo-SP</p>
+                  </div>
+               </div>
+               <div class="slide">
+                  <img src="./img/foto-catando-lixo.jpeg" alt="Terceira imagem">
+                  <div class="img-desc">
+                     <p>Voluntária realizando trabalho de coleta de lixo.</p>
+                     <p>Praia do Gonzaga em Santos-SP</p>
+                  </div>
+               </div>
+               <div class="slide">
+                  <img src="./img/oficial-voluntario.jpg" alt="Quarta imagem">
+                  <div class="img-desc">
+                     <p>Oficiais da Marinha Brasileira realizando trabalho em alto mar.</p>
+                     <p>Oceâno Atlântico</p>
+                  </div>
+               </div>
+               <div class="auto-navigation">
+                  <div class="auto-btn1"></div>
+                  <div class="auto-btn2"></div>
+                  <div class="auto-btn3"></div>
+                  <div class="auto-btn4"></div>
                </div>
             </div>
-            <div class="slide">
-               <img src="./img/treinamento de mergulho.jpeg" alt="Segunda imagem">
-               <div class="img-desc">
-                  <p>Bombeiros mergulhadores certificados realizando treinamento.</p>
-                  <p>Base de treinamento em São Paulo-SP</p>
-               </div>
+            <div class="manual-navigation">
+               <label for="radio1" class="manual-btn"></label>
+               <label for="radio2" class="manual-btn"></label>
+               <label for="radio3" class="manual-btn"></label>
+               <label for="radio4" class="manual-btn"></label>
             </div>
-            <div class="slide">
-               <img src="./img/foto-catando-lixo.jpeg" alt="Terceira imagem">
-               <div class="img-desc">
-                  <p>Voluntária realizando trabalho de coleta de lixo.</p>
-                  <p>Praia do Gonzaga em Santos-SP</p>
-               </div>
-            </div>
-            <div class="slide">
-               <img src="./img/oficial-voluntario.jpg" alt="Quarta imagem">
-               <div class="img-desc">
-                  <p>Oficiais da Marinha Brasileira realizando trabalho em alto mar.</p>
-                  <p>Oceâno Atlântico</p>
-               </div>
-            </div>
-            <div class="auto-navigation">
-               <div class="auto-btn1"></div>
-               <div class="auto-btn2"></div>
-               <div class="auto-btn3"></div>
-               <div class="auto-btn4"></div>
-            </div>
-         </div>
-         <div class="manual-navigation">
-            <label for="radio1" class="manual-btn"></label>
-            <label for="radio2" class="manual-btn"></label>
-            <label for="radio3" class="manual-btn"></label>
-            <label for="radio4" class="manual-btn"></label>
          </div>
       </div>
+      <section class="about">
+         <div class="title">
+            <h1>Sobre o projeto</h1>
+         </div>
+         <div class="description">
+            
+         </div>
+      </section>
    </main>
    <footer>
       <h1>rodape</h1>
    </footer>
    <script src="./js/script.js"></script>
 </body>
+
 </html>
