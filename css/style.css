@@ -31,6 +31,7 @@ header {
    font-family: "Montserrat", sans-serif;
    font-weight: 400;
    height: 12vh;
+   font-size: 1.2rem;
 }
 
 .nav-list {
@@ -56,6 +57,7 @@ header {
 main {
    background: url("../img/background.jpg") no-repeat center center;
    background-size: cover;
+   font-family: "Montserrat", sans-serif;
 }
 
 #main-index {
@@ -63,6 +65,12 @@ main {
    grid-template-columns: 1fr;
    gap: 40px;
    padding: 20px;
+}
+
+.pictures {
+   color: #FFF;
+   text-align: center;
+   font-size: 2rem;
 }
 
 .slider {
@@ -83,8 +91,6 @@ main {
 }
 
 .slide{
-   display: flex;
-   flex-direction: column;
    align-items: end;
    width: 25%;
    position: relative;
@@ -96,11 +102,11 @@ main {
 }
 
 .img-desc {
-   width: 600px;
-   background-color: rgb(255, 255, 255, 0.4);
+   width: 800px;
+   font-size: 1.3rem;
+   background-color: rgb(255, 255, 255, 0.6);
    border-radius: 10px;
    text-align: right;
-   font-family: "Montserrat", sans-serif;
 }
 
 .manual-navigation{
@@ -174,14 +180,27 @@ main {
 }
 
 .about {
-   font-family: "Montserrat", sans-serif;
+   padding-top: 5%;
    color: #FFF;
 }
 
 .about h1{
-   font-size: 50px;
+   font-size: 5rem;
 }
 
 .about p {
-   font-size: 25px;
+   font-size: 2rem;
+}
+
+.form {
+   display: flex;
+   flex-direction: column;
+}
+
+#experience {
+   cursor: pointer;
+}
+
+#areas {
+   cursor: pointer;
 }
