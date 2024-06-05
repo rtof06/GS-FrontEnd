@@ -58,26 +58,6 @@ header {
    padding-bottom: 0.5rem;
 }
 
-.dropdown-menu {
-   display: none;
-   padding: 5vh 0;
-   gap: 3vh;
-   width: 100%;
-   background-color: #FFF;
-   width: 9vw;
-   position: absolute;
-}
-
-
-.dropdown-menu a{
-   display: block;
-   text-align: center;
-}
-
-.dropdown:hover .dropdown-menu{
-   display: flex;
-   flex-direction: column;
-}
 
 main {
    background: url("../img/background.jpg") no-repeat center center;
