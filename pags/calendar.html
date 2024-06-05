@@ -1,21 +1,77 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="../css/style.css">
+   <link rel="stylesheet" href="../css/calendar.css">
    <title>Agenda</title>
 </head>
+
 <body>
    <header>
-      <h1>Agenda</h1>
+      <nav class="header-navigation">
+         <a class="logo" href="/"><img src="../img/logo-projeto.png" alt="Logo do Futuro à Beira-Mar"></a>
+         <ul class="nav-list">
+            <li class="pags"><a href="../index.html">Início</a></li>
+            <li class="pags"><a href="../pags/solution.html">Solução</a></li>
+            <li class="pags"><a href="../pags/relacts.html">Relatos</a></li>
+            <li class="pags"><a href="../pags/calendar.html">Agenda</a></li>
+            <li class="pags"><a href="../pags/login.html">Login</a></li>
+         </ul>
+      </nav>
    </header>
    <main>
-      <h1>meio</h1>
+      <div class="map">
+         <h1 class="title">Localizações disponíveis</h1>
+         <img src="../img/brasil.png" alt="Contorno do mapa do Brasil">
+         <div class="dot porto-seguro" onclick="openModal('modal1')"></div>
+         <div class="dot ubatuba" onclick="openModal('modal2')"></div>
+         <div class="dot florianopolis" onclick="openModal('modal3')"></div>
+      </div>
+
+      <div id="modal1" class="modal">
+         <div class="modal-content">
+            <span class="close" onclick="closeModal('modal1')">&times;</span>
+            <h1>Limpeza de praia</h1>
+            <p><strong>Local:</strong> Praia do Espelho, Porto Seguro-BA</p>
+            <p><strong>Horário do evento:</strong> 6h às 20h</p>
+            <p><strong>Atividade:</strong> Limpeza de praia com instrutores.</p>
+            <p><strong>Requisito:</strong> Não é necessário experiência.</p>
+         </div>
+      </div>
+      <div id="modal2" class="modal">
+         <div class="modal-content">
+            <span class="close" onclick="closeModal('modal2')">&times;</span>
+            <h1>Treinamento de mergulho para restauração de corais</h1>
+            <p><strong>Local:</strong> Praia da Baleia, Ubatuba-SP</p>
+            <p><strong>Data:</strong> 07/06</p>
+            <p><strong>Horário do evento:</strong> 9h às 11h</p>
+            <p><strong>Atividade:</strong> Treinamento de mergulho para a restauração de recifes de corais juntamente da
+               Marinha do Brasil.</p>
+            <p><strong>Requisito:</strong> É necessário ter 6 meses de experiência como mergulhador.</p>
+         </div>
+      </div>
+      <div id="modal3" class="modal">
+         <div class="modal-content">
+            <span class="close" onclick="closeModal('modal3')">&times;</span>
+            <h1>Palestra sobre o cultivo sustentável de ostras</h1>
+            <p><strong>Local:</strong> Praia do Campeche, Florianólis-SC</p>
+            <p><strong>Data:</strong> 15/06</p>
+            <p><strong>Horário do evento:</strong> 7h às 10h e 15h às 18h</p>
+            <p><strong>Atividade:</strong> Palestras com Dr. Pedro Andrade sobre o cultivo sustentável de ostras e como
+               elas são necessárias para as praias. No final da palestra terá um brinde em homenagem à sustentabilidade.
+            </p>
+            <p><strong>Requisito:</strong> Livre para todos os públicos.</p>
+         </div>
+      </div>
+
    </main>
    <footer>
       <h1>rodape</h1>
    </footer>
    <script src="../js/script.js"></script>
 </body>
+
 </html>

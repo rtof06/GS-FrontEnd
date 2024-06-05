@@ -1,0 +1,67 @@
+.map {
+   display: flex;
+}
+
+.title {
+   text-align: center;
+}
+.map img {
+   width: 70%;
+   height: auto;
+   padding: 0 2%;
+}
+.dot {
+   position: absolute;
+   width: 2%;
+   height: 4%;
+   background-color: #ff0000;
+   border-radius: 50%;
+}
+
+.dot:hover{
+   box-shadow: 0 0 15px #FFF;
+}
+
+.porto-seguro {
+   top: 80%;
+   left: 89%;
+}
+
+.ubatuba {
+   top: 105%;
+   left: 78%;
+}
+
+.florianopolis {
+   top: 118%;
+   left: 72%;
+}
+
+.modal{
+   display: none;
+   position: fixed;
+   background-color: rgba(0,0,0,0.4);
+   padding-top: 60px;
+}
+
+.modal-content{
+   background-color: #FFF;
+   border-radius: 10px;
+   margin: 5% auto;
+   padding: 2%;
+   border: 1px solid #888;
+   width: 80%;
+}
+
+.close{
+   color: #aaa;
+   float:right;
+   font-size: 3rem;
+   font-weight: bold;
+}
+.close:hover,
+.close:focus{
+   opacity: 80%;
+   text-decoration: none;
+   cursor: pointer;
+}
