@@ -7,18 +7,24 @@
    <link rel="stylesheet" href="../css/style.css">
    <link rel="stylesheet" href="../css/calendar.css">
    <title>Agenda</title>
+   <script src="../js/script.js" defer></script>
+   <script src="../js/modals.js" defer></script>
 </head>
-
 <body>
    <header>
       <nav class="header-navigation">
          <a class="logo" href="/"><img src="../img/logo-projeto.png" alt="Logo do Futuro à Beira-Mar"></a>
-         <ul class="nav-list">
+         <ul class="nav-list" id="nav-list">
             <li class="pags"><a href="../index.html">Início</a></li>
             <li class="pags"><a href="../pags/solution.html">Solução</a></li>
             <li class="pags"><a href="../pags/relacts.html">Relatos</a></li>
             <li class="pags"><a href="../pags/calendar.html">Agenda</a></li>
-            <li class="pags"><a href="../pags/login.html">Login</a></li>
+            <li class="pags dropdown"><a href="#">Cadastre-se</a>
+               <div class="dropdown-menu">
+                  <a href="./register/register_event.html">Evento</a>
+                  <a href="./register/register_volunteer.html">Voluntário</a>
+               </div>
+            </li>
          </ul>
       </nav>
    </header>
@@ -30,7 +36,6 @@
          <div class="dot ubatuba" onclick="openModal('modal2')"></div>
          <div class="dot florianopolis" onclick="openModal('modal3')"></div>
       </div>
-
       <div id="modal1" class="modal">
          <div class="modal-content">
             <span class="close" onclick="closeModal('modal1')">&times;</span>
@@ -66,7 +71,6 @@
             <p><strong>Requisito:</strong> Livre para todos os públicos.</p>
          </div>
       </div>
-
    </main>
    <footer id="rodape">
       <div class="redes-sociais">
@@ -89,7 +93,6 @@
       </div>
       <p class="direitos_empresas">&copy;2024 G20 & Amplexus Technology</p>
    </footer>
-   <script src="../js/script.js"></script>
 </body>
 
 </html>
