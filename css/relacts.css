@@ -1,3 +1,29 @@
+
+.relacts {
+   display: flex;
+}
+
+.picture {
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   padding: 3%;
+}
+
+.relato {
+   display: flex;
+   color: #FFF;
+   gap: 10px;
+}
+
+.relato img{
+   width: 30%;
+}
+
+.relato h1 {
+   font-size: 2rem;
+}
+
 #rodape {
     display: flex;
     justify-content: space-between;
@@ -35,3 +61,4 @@
  .img-redes {
     width: 5%;
  }
+

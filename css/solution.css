@@ -8,7 +8,7 @@ header {
    color: rgb(186, 225, 251);
 }
 
-.title {
+.solution-title {
    display: flex;
    justify-content: center;
    align-items: center;
@@ -19,12 +19,12 @@ header {
    transition: .4s ease-in-out;
 }
 
-.title:hover {
+.solution-title:hover {
    color: rgba(120, 201, 255);
    transform: scale(1.03);
 }
 
-.title img {
+.solution-title img {
    width: 20%;
 }
 
