@@ -11,15 +11,15 @@
 }
 
 header {
-   padding: 0 10px;
+   padding: 0 30px;
 }
 
-.logo img{
-   width: 11vh  ;
+.logo img {
+   width: 11vh;
    transition: 1s;
 }
 
-.logo img:hover{
+.logo img:hover {
    opacity: 0.5;
 }
 
@@ -42,63 +42,41 @@ header {
    margin: 0;
 }
 
-.pags, .login {
+.pags{
    letter-spacing: 0.2em;
    margin-left: 2rem;
 }
 
-.pags a,
-.login p {
+.pags a {
    color: black;
    text-decoration: none;
    transition: 0.3s;
 }
 
-.pags a:hover, .login p:hover {
-   cursor: pointer;
+.pags a:hover {
    border-bottom: solid 1px var(--main-color);
    padding-bottom: 0.5rem;
 }
 
-.login-box {
+.dropdown-menu {
    display: none;
-   position: absolute;
-   top: 12vh;
-   right: 0;
-   width: 15vw;
-   border-radius: 0 0 0.625rem 0.625rem;
-   background-color: #fff;
-   flex-direction: column;
-   align-items: center;
-   font-size: 1rem;
-   box-shadow: 0px 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
-}
-
-.login:hover {
-   .login-box{
-      display: block;
-      position: absolute;
-   }
-}
-
-.pags-login {
-   margin: 0;
-   padding: 1rem;
+   padding: 5vh 0;
+   gap: 3vh;
    width: 100%;
+   background-color: #FFF;
+   width: 9vw;
+   position: absolute;
+}
+
+
+.dropdown-menu a{
+   display: block;
    text-align: center;
 }
 
-.pags-login a {
-   color: black;
-   text-decoration: none;
-   display: block;
-   width: 100%;
-}
-
-.pags-login a:hover {
-   background-color: var(--main-color);
-   border-radius: 10px;
-   color: white;
+.dropdown:hover .dropdown-menu{
+   display: flex;
+   flex-direction: column;
 }
 
 main {
