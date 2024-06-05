@@ -37,7 +37,7 @@ header {
    gap: 2%;
    padding: 5%;
    font-size: 1rem;
-   height: 750px;
+   height: 800px;
 }
 
 .solution-text-intro {
@@ -48,6 +48,7 @@ header {
    width: 700px;
    background-color: rgb(255, 255, 255, 0.1);
    border-radius: 10px;
+   padding: 1%;
 }
 
 .solution-text-problem {
@@ -58,6 +59,12 @@ header {
    width: 700px;
    background-color: rgb(255, 255, 255, 0.1);
    border-radius: 10px;
+   padding: 1%;
+}
+
+.solution-text-problem ul {
+   text-align: left;
+   list-style: none;
 }
 
 .solution-text-solution {
@@ -68,6 +75,12 @@ header {
    width: 700px;
    background-color: rgb(255, 255, 255, 0.1);
    border-radius: 10px;
+   padding: 1%;
+}
+
+.solution-text-solution ul {
+   text-align: left;
+   list-style: none;
 }
 
 .apresentation {
