@@ -13,3 +13,12 @@ function nextImage(){
 
    document.getElementById("radio" + counter).checked = true;
 }
+
+document.addEventListener('DOMContentLoaded', (event) => {
+   let mobileMenu = document.getElementById('mobile-menu');
+   let navList = document.getElementById('nav-list');
+
+   mobileMenu.addEventListener('click', function () {
+      navList.classList.toggle('nav-list-active');
+   });
+});
