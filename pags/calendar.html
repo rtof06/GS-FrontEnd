@@ -23,7 +23,7 @@
       </nav>
    </header>
    <main id="main-calendar">
-      <div class="map">
+      <div class="map" id="mapa">
          <h1 class="title">Localizações disponíveis</h1>
          <img src="../img/brasil.png" alt="Contorno do mapa do Brasil">
          <div class="dot porto-seguro"></div>
@@ -65,6 +65,23 @@
             </p>
             <p><strong>Requisito:</strong> Livre para todos os públicos.</p>
          </div>
+      </div>
+      <div class="register">
+         <h1>Deseja cadastrar um evento?</h1>
+         <form action="#" class="form">
+            <label for="name">Seu nome:</label>
+            <input type="text" id="idName" name="name" class="name" pattern="^[A-za-z]$" title="Insira seu nome" required>
+            <label for="lastname">Seu sobrenome:</label>
+            <input type="text" name="lastname" id="idLastname" class="lastname" pattern="^[A-za-z]$" title="Insira seu sobrenome" required>
+            <label for="email">Seu email:</label>
+            <input type="email" name="email" id="idEmail" class="email" pattern="^[A-za-z]$" placeholder="exemplo@email.com">
+            <label for="phone">Seu telefone:</label>
+            <input type="tel" id="phone" name="phone" pattern="^\([1-9]{2}\) (?:[2-8]|9[0-9])[0-9]{3}\-[0-9]{4}$"
+               placeholder="(99) 99999-9999" required />
+            <label for="local">Qual localização?</label>
+            <button type="submit" class="send-btn" id="sendButton">Enviar</button>
+         </form>
+         <button type="button" id="btn-register">Quero cadastrar meu evento</button>
       </div>
    </main>
    <footer id="rodape">
