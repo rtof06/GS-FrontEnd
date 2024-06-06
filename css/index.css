@@ -4,7 +4,13 @@
    gap: 40px;
 }
 
-.title h1{
+.main-title {
+   background-color: rgba(0, 24, 47, 0.4);
+   box-shadow: 10px 10px 10px rgba(0, 24, 47, 0.5);
+   padding: 20px;
+}
+
+.main-title h1{
    font-size: 3rem;
 }
 
@@ -24,7 +30,6 @@
 .slides {
    display: flex;
    width: 400%;
-   height: 600px;
 }
 
 .slides input{
@@ -32,6 +37,8 @@
 }
 
 .slide{
+   display: flex;
+   flex-direction: column;
    align-items: end;
    width: 25%;
    position: relative;
@@ -39,7 +46,7 @@
 }
 
 .slide img {
-   width: 1000px;
+   width: 950px;
 }
 
 .img-desc {
@@ -47,7 +54,8 @@
    font-size: 1.3rem;
    background-color: rgb(255, 255, 255, 0.6);
    border-radius: 10px;
-   text-align: right;
+   text-align: center;
+   padding: 10px;
 }
 
 .manual-navigation{
@@ -142,14 +150,13 @@
    border:none;
    border-radius: 10px;
    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
-   padding: 10px 30px;
+   padding: 10px 50px;
    text-align: center;
 }
 
 .send-btn {
-   font-family: "Fredoka", sans-serif;
-   font-weight: 600;
    font-size: 20px;
+   font-weight: 600;
    border: none;
    margin: 20px;
    padding: 10px 20px;
@@ -159,8 +166,9 @@
    transition: 0.3s;
 }
 
-.sent-btn:hover {
-   background-color: #d4f6ff;
+.send-btn:hover {
+   cursor: pointer;
+   background-color: #8fc3ff;
 }
 
 .send-btn:active {
@@ -173,4 +181,31 @@
 
 #areas {
    cursor: pointer;
+}
+
+@media (max-width:1010px) {
+   .slide {
+      align-items: center;
+   }
+
+   .img-desc {
+      width: 50%;
+   }
+   
+   .slide img {
+      width: 700px;
+   }
+
+   .manual-navigation{
+      margin-top: 500px;
+   }
+
+   .auto-navigation{
+      margin-top: 500px;
+   }
+
+   .description{
+      padding-top: 0;
+   }
+
 }
