@@ -4,7 +4,13 @@
    gap: 40px;
 }
 
-.title h1{
+.main-title {
+   background-color: rgba(0, 24, 47, 0.4);
+   box-shadow: 10px 10px 10px rgba(0, 24, 47, 0.5);
+   padding: 20px;
+}
+
+.main-title h1{
    font-size: 3rem;
 }
 
@@ -160,8 +166,9 @@
    transition: 0.3s;
 }
 
-.sent-btn:hover {
-   background-color: #d4f6ff;
+.send-btn:hover {
+   cursor: pointer;
+   background-color: #8fc3ff;
 }
 
 .send-btn:active {

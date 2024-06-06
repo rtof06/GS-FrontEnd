@@ -24,7 +24,7 @@
    </header>
    <main id="main-index">
       <section class="pictures">
-         <div class="title">
+         <div class="main-title">
             <h1>Pronto para melhorar o planeta?</h1>
             <h1>Comece agora mesmo.</h1>
          </div>
@@ -38,7 +38,6 @@
                   <img src="./img/mergulhador.jpg" alt="Primeira imagem">
                   <div class="img-desc">
                      <p>Um mergulhador realizando trabalho de restauração de corais.
-                        <br>Praia do Félix em Pipa-RN
                      </p>
                   </div>
                </div>
@@ -46,21 +45,18 @@
                   <img src="./img/treinamento de mergulho.jpeg" alt="Segunda imagem">
                   <div class="img-desc">
                      <p>Bombeiros mergulhadores certificados realizando treinamento.</p>
-                     <p>Base de treinamento em São Paulo-SP</p>
                   </div>
                </div>
                <div class="slide">
                   <img src="./img/multidao-voluntarios.jpg" alt="Terceira imagem">
                   <div class="img-desc">
                      <p>Voluntária realizando trabalho de coleta de lixo.</p>
-                     <p>Praia do Gonzaga em Santos-SP</p>
                   </div>
                </div>
                <div class="slide">
                   <img src="./img/oficial-voluntario.jpg" alt="Quarta imagem">
                   <div class="img-desc">
                      <p>Oficiais da Marinha Brasileira realizando trabalho em alto mar.</p>
-                     <p>Oceâno Atlântico</p>
                   </div>
                </div>
                <div class="auto-navigation">
@@ -87,14 +83,14 @@
          <h2>Inscreva-se e seja a mudança!</h2>
          <form action="#" class="form">
             <label for="name">Seu nome:</label>
-            <input type="text" id="idName" name="name" class="name" required>
+            <input type="text" id="idName" name="name" class="name" pattern="^[A-za-z]$" title="Insira seu nome" required>
             <label for="lastname">Seu sobrenome:</label>
-            <input type="text" name="lastname" id="idLastname" class="lastname" required>
+            <input type="text" name="lastname" id="idLastname" class="lastname" pattern="^[A-za-z]$" title="Insira seu sobrenome" required>
             <label for="email">Seu email:</label>
-            <input type="email" name="email" id="idEmail" class="email" placeholder="exemplo@email.com">
+            <input type="email" name="email" id="idEmail" class="email" pattern="^[A-za-z]$" placeholder="exemplo@email.com">
             <label for="phone">Seu telefone:</label>
             <input type="tel" id="phone" name="phone" pattern="^\([1-9]{2}\) (?:[2-8]|9[0-9])[0-9]{3}\-[0-9]{4}$"
-               placeholder="(99)99999-9999" required />
+               placeholder="(99) 99999-9999" required />
             <label for="experience">Qual sua experiência?</label>
             <input id="experience" list="data-experience" placeholder="Clique para selecionar">
             <datalist id="data-experience">
