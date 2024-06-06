@@ -9,6 +9,7 @@ document.querySelectorAll(".dot").forEach((dot) => {
         modalId = "modal3";
     }
     const modal = document.getElementById(modalId);
+    const background = document.getElementById("mapa");
     modal.style.display = "flex";
     });
 });

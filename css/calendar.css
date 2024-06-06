@@ -64,3 +64,34 @@
    right: 10px;
    cursor: pointer;
 }
+
+.register {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+   color: #FFF;
+   padding: 10%;
+}
+
+#btn-register{
+   font-size: 20px;
+   font-weight: 600;
+   border: none;
+   width: 30%;
+   margin: 20px;
+   padding: 20px 30px;
+   border-radius: 50px;
+   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+   opacity: 1;
+   transition: 0.3s;
+}
+
+#btn-register:hover {
+   cursor: pointer;
+   background-color: #8fc3ff;
+}
+
+#btn-register:active {
+   background-color: var(--main-color);
+}
