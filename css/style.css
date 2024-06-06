@@ -118,10 +118,9 @@ main {
    font-size: 20px;
 }
 
-.direitos__imagens {
+.direitos-imagens {
    display: flex;
    justify-content: center;
-   padding: 3%;
 }
 
 .redes-sociais {
