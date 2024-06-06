@@ -50,7 +50,7 @@
                   </div>
                </div>
                <div class="slide">
-                  <img src="./img/foto-catando-lixo.jpeg" alt="Terceira imagem">
+                  <img src="./img/multidao-voluntarios.jpg" alt="Terceira imagem">
                   <div class="img-desc">
                      <p>Voluntária realizando trabalho de coleta de lixo.</p>
                      <p>Praia do Gonzaga em Santos-SP</p>
@@ -84,34 +84,34 @@
          </div>
       </section>
       <section class="about">
-            <h2>Inscreva-se e seja a mudança!</h2>
-            <form action="#" class="form">
-               <label for="name">Seu nome:</label>
-               <input type="text" id="idName" name="name" class="name" placeholder="Nome" required>
-               <label for="lastname">Seu sobrenome:</label>
-               <input type="text" name="lastname" id="idLastname" class="lastname" placeholder="Sobrenome" required>
-               <label for="email">Seu email:</label>
-               <input type="email" name="email" id="idEmail" class="email" placeholder="exemplo@email.com">
-               <label for="phone">Seu telefone:</label>
-               <input type="tel" id="phone" name="phone" pattern="^\([1-9]{2}\) (?:[2-8]|9[0-9])[0-9]{3}\-[0-9]{4}$"
-                  placeholder="(99)99999-9999" required />
-               <label for="experience">Qual sua experiência?</label>
-               <input id="experience" list="data-experience">
-               <datalist id="data-experience">
-                  <option value="Profissional">Possuo experiência na área</option>
-                  <option value="Voluntario">Não possuo experiência na área</option>
-               </datalist>
-               <label for="areas">Área que deseja agir:</label>
-               <input id="areas" list="data-areas">
-               <datalist id="data-areas">
-                  <option value="Limpeza de praia"></option>
-                  <option value="Monitoramento de animais marítmos"></option>
-                  <option value="Restauração de recifes de corais"></option>                     
-                  <option value="Educação ambiental">Educação ambiental</option>
-                  <option value="Monitoramento da qualidade da água"></option>
-               </datalist>
-               <button class="send-btn" id="sendButton">Enviar</button>
-            </form>
+         <h2>Inscreva-se e seja a mudança!</h2>
+         <form action="#" class="form">
+            <label for="name">Seu nome:</label>
+            <input type="text" id="idName" name="name" class="name" required>
+            <label for="lastname">Seu sobrenome:</label>
+            <input type="text" name="lastname" id="idLastname" class="lastname" required>
+            <label for="email">Seu email:</label>
+            <input type="email" name="email" id="idEmail" class="email" placeholder="exemplo@email.com">
+            <label for="phone">Seu telefone:</label>
+            <input type="tel" id="phone" name="phone" pattern="^\([1-9]{2}\) (?:[2-8]|9[0-9])[0-9]{3}\-[0-9]{4}$"
+               placeholder="(99)99999-9999" required />
+            <label for="experience">Qual sua experiência?</label>
+            <input id="experience" list="data-experience" placeholder="Clique para selecionar">
+            <datalist id="data-experience">
+               <option value="Profissional">Possuo experiência na área</option>
+               <option value="Voluntario">Não possuo experiência na área</option>
+            </datalist>
+            <label for="areas">Área que deseja agir:</label>
+            <input id="areas" list="data-areas" placeholder="Clique para selecionar">
+            <datalist id="data-areas">
+               <option value="Limpeza de praia"></option>
+               <option value="Monitoramento de animais marítmos"></option>
+               <option value="Restauração de recifes de corais"></option>
+               <option value="Educação ambiental">Educação ambiental</option>
+               <option value="Monitoramento da qualidade da água"></option>
+            </datalist>
+            <button type="submit" class="send-btn" id="sendButton">Enviar</button>
+         </form>
          </div>
       </section>
    </main>
@@ -120,12 +120,12 @@
          <p>Siga-nos nas redes sociais:</p>
          <section class="rodape__links">
             <a href="https://instagram.com/g20org/"><img class="img-redes" src="./img/Instagram-black.png"
-               alt="Logo Instagram"></a>
+                  alt="Logo Instagram"></a>
             <a href="https://twitter.com/g20org"><img class="img-redes" src="./img/TwitterX.png" alt="Logo X"></a>
             <a href="https://youtube.com/@G20orgBrasil"><img class="img-redes" src="./img/YouTube.png"
-               alt="Logo Youtube"></a>
+                  alt="Logo Youtube"></a>
             <a href="https://facebook.com/g20org"><img class="img-redes" src="./img/Facebook F.png"
-               alt="Logo Facebook"></a>   
+                  alt="Logo Facebook"></a>
          </section>
       </div>
       <div class="direitos-autorais">
@@ -138,17 +138,17 @@
    </footer>
    <script>
       window.watsonAssistantChatOptions = {
-        integrationID: "c5144f94-35b0-4ff5-8da3-9c8aab3cc597", // The ID of this integration.
-        region: "au-syd", // The region your integration is hosted in.
-        serviceInstanceID: "a757ab65-53c5-4d84-8cd4-7328bbcc4ea4", // The ID of your service instance.
-        onLoad: async (instance) => { await instance.render(); }
+         integrationID: "c5144f94-35b0-4ff5-8da3-9c8aab3cc597", // The ID of this integration.
+         region: "au-syd", // The region your integration is hosted in.
+         serviceInstanceID: "a757ab65-53c5-4d84-8cd4-7328bbcc4ea4", // The ID of your service instance.
+         onLoad: async (instance) => { await instance.render(); }
       };
-      setTimeout(function(){
-        const t=document.createElement('script');
-        t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
-        document.head.appendChild(t);
+      setTimeout(function () {
+         const t = document.createElement('script');
+         t.src = "https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+         document.head.appendChild(t);
       });
-    </script>
+   </script>
 </body>
 
 </html>

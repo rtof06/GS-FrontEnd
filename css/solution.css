@@ -4,6 +4,12 @@ header {
    background-color: #FFF;
 }
 
+#main-solution{
+   display: grid;
+   grid-template-columns: 1fr;
+   gap: 90px;
+}
+
 .solution {
    color: rgb(186, 225, 251);
 }
@@ -36,8 +42,12 @@ header {
    align-items: center;
    gap: 2%;
    padding: 5%;
-   font-size: 1rem;
+   font-size: 1.2rem;
    height: 800px;
+}
+
+.solution-text h1{
+   font-size: 2rem;
 }
 
 .solution-text-intro {
