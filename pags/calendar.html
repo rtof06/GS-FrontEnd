@@ -9,7 +9,9 @@
    <title>Agenda</title>
    <script src="../js/script.js" defer></script>
    <script src="../js/modals.js" defer></script>
+   <script src="../js/calendar.js" defer></script>
 </head>
+
 <body>
    <header>
       <nav class="header-navigation">
@@ -18,7 +20,7 @@
             <div class="line1"></div>
             <div class="line2"></div>
             <div class="line3"></div>
-         </div>         
+         </div>
          <ul class="nav-listas" id="nav-list">
             <li class="pags"><a href="../index.html">Início</a></li>
             <li class="pags"><a href="solution.html">Solução</a></li>
@@ -75,18 +77,31 @@
          <h1>Deseja cadastrar um evento?</h1>
          <form action="#" class="form">
             <label for="name">Seu nome:</label>
-            <input type="text" id="idName" name="name" class="name" pattern="^[A-za-z]$" title="Insira seu nome" required>
+            <input type="text" id="idName" name="name" class="name" pattern="[A-Za-zÀ-ÿ\s]+" title="O nome deve conter apenas letras."
+               required>
             <label for="lastname">Seu sobrenome:</label>
-            <input type="text" name="lastname" id="idLastname" class="lastname" pattern="^[A-za-z]$" title="Insira seu sobrenome" required>
+            <input type="text" name="lastname" id="idLastname" class="lastname" pattern="[A-Za-zÀ-ÿ\s]+" title="O nome deve conter apenas letras." required>
             <label for="email">Seu email:</label>
-            <input type="email" name="email" id="idEmail" class="email" pattern="^[A-za-z]$" placeholder="exemplo@email.com">
+            <input type="email" name="email" id="idEmail" class="email" required
+               placeholder="exemplo@email.com">
             <label for="phone">Seu telefone:</label>
             <input type="tel" id="phone" name="phone" pattern="^\([1-9]{2}\) (?:[2-8]|9[0-9])[0-9]{3}\-[0-9]{4}$"
                placeholder="(99) 99999-9999" required />
-            <label for="local">Qual localização?</label>
-            <button type="submit" class="send-btn" id="sendButton">Enviar</button>
+            <label for="city">Selecione a cidade:</label>
+            <select id="city" name="city" onchange="mostrarOutraCidade()">
+               <option value="São Paulo">São Paulo</option>
+               <option value="Florianópolis">Florianópolis</option>
+               <option value="Porto Seguro">Porto Seguro</option>
+               <option value="Outra">Outra</option>
+            </select>
+
+            <div id="inputOutraCidade" style="display: none;">
+               <label for="outraCidade">Digite o nome da cidade:</label>
+               <input type="text" id="outro" name="outraCidade">
+            </div>
+            <input type="submit" id="btn-register"></input>
          </form>
-         <button type="button" id="btn-register">Quero cadastrar meu evento</button>
+         
       </div>
    </main>
    <footer id="rodape">
@@ -94,12 +109,12 @@
          <p>Siga-nos nas redes sociais:</p>
          <section class="rodape__links">
             <a href="https://instagram.com/g20org/"><img class="img-redes" src="../img/Instagram-black.png"
-               alt="Logo Instagram"></a>
+                  alt="Logo Instagram"></a>
             <a href="https://twitter.com/g20org"><img class="img-redes" src="../img/TwitterX.png" alt="Logo X"></a>
             <a href="https://youtube.com/@G20orgBrasil"><img class="img-redes" src="../img/YouTube.png"
-               alt="Logo Youtube"></a>
+                  alt="Logo Youtube"></a>
             <a href="https://facebook.com/g20org"><img class="img-redes" src="../img/Facebook F.png"
-               alt="Logo Facebook"></a>   
+                  alt="Logo Facebook"></a>
          </section>
       </div>
       <div class="direitos-autorais">

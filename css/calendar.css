@@ -1,245 +1,483 @@
 .map {
-   display: flex;
-   position: relative;
-   justify-content: center;
+    display: flex;
+    position: relative;
+    justify-content: center;
 }
 
 .map-title {
-   padding: 2%;
-   text-align: center;
-   font-size: 3rem;
-   background-color: rgba(1, 27, 44, 0.5);
-   transition: .4s ease-in-out;
-   color: #FFF;
-   box-shadow: 3px 0 3px rgba(1, 27, 44, 0.5);
-}
-.map img {
-   width: 620px;
-   height: auto;
-   padding: 0 2%;
-}
-.dot {
-   position: absolute;
-   width: 20px;
-   height: 20px;
-   background-color: #ff0000;
-   border-radius: 50%;
+    padding: 2%;
+    text-align: center;
+    font-size: 3rem;
+    background-color: rgba(1, 27, 44, 0.5);
+    transition: .4s ease-in-out;
+    color: #FFF;
+    box-shadow: 3px 0 3px rgba(1, 27, 44, 0.5);
 }
 
-.dot:hover{
-   box-shadow: 0 0 15px #FFF;
+.map img {
+    width: 720px;
+    height: auto;
+    padding: 50px;
+}
+
+.dot {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #ff0000;
+    border-radius: 50%;
+}
+
+.dot:hover {
+    box-shadow: 0 0 15px #FFF;
 }
 
 .porto-seguro {
-   top: 360px;
-   left: 840px;
+    top: 400px;
+    left: 1170px;
 }
 
 .ubatuba {
-   top: 420px;
-   left: 750px;
+    top: 520px;
+    left: 1050px;
 }
 
 .florianopolis {
-   top: 480px;
-   left: 700px;
+    top: 580px;
+    left: 1000px;
 }
 
 .modal {
-   display: none;
-   width: 40%;
-   height: 30%;
-   align-items: center;
-   position: fixed;
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%, -50%);
-   background-color: white;
-   padding: 20px;
-   border: 2px solid #ccc;
-   border-radius: 5px;
-   z-index: 1000;
+    display: none;
+    width: 40%;
+    height: 30%;
+    align-items: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    z-index: 1000;
 }
 
-.modal h1{
-   font-size: 24px;
+.modal h1 {
+    font-size: 24px;
 }
 
 .close {
-   font-size: 3rem;
-   position: absolute;
-   top: 10px;
-   right: 10px;
-   cursor: pointer;
+    font-size: 3rem;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
 }
 
 .register {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   text-align: center;
-   color: #FFF;
-   padding: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #FFF;
+    padding: 3% 10%;
 }
 
-#btn-register{
-   font-size: 20px;
-   font-weight: 600;
-   border: none;
-   width: 30%;
-   margin: 20px;
-   padding: 20px 30px;
-   border-radius: 50px;
-   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
-   opacity: 1;
-   transition: 0.3s;
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.2rem;
+    gap: 10px;
+}
+
+.form input {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+    padding: 10px 50px;
+    text-align: center;
+}
+
+#btn-register {
+    font-size: 20px;
+    font-weight: 600;
+    transition: 0.3s;
 }
 
 #btn-register:hover {
-   cursor: pointer;
-   background-color: #8fc3ff;
+    cursor: pointer;
+    background-color: #8fc3ff;
 }
 
 #btn-register:active {
-   background-color: var(--main-color);
+    background-color: var(--main-color);
 }
 
-/* Media query para largura máxima de 1024px */
+@media (max-width: 1440px) {
+    .map-title {
+        font-size: 2rem;
+        padding: 2%;
+    }
+
+    .map img {
+        width: 70%;
+        padding: 20px;
+    }
+
+    .dot {
+        width: 15px;
+        height: 15px;
+    }
+
+    .porto-seguro {
+        top: 550px;
+        left: 1070px;
+    }
+    
+    .ubatuba {
+        top: 750px;
+        left: 900px;
+    }
+    
+    .florianopolis {
+        top: 850px;
+        left: 820px;
+    }
+
+    .modal {
+        width: 30%;
+        height: 25%;
+    }
+
+    .modal h1 {
+        font-size: 20px;
+    }
+
+    .close {
+        font-size: 2.5rem;
+    }
+
+    .register {
+        padding: 2% 8%;
+    }
+
+    .form {
+        font-size: 1rem;
+        gap: 8px;
+    }
+
+    .form input {
+        padding: 8px 40px;
+    }
+
+    #btn-register {
+        font-size: 18px;
+    }
+}
+
 @media (max-width: 1024px) {
-   .map {
-       flex-direction: column;
-       align-items: center;
-   }
+    .map-title {
+        font-size: 1.5rem;
+        padding: 2%;
+    }
 
-   .map img {
-       width: 500px;
-   }
+    .map img {
+        width: 60%;
+        padding: 15px;
+    }
 
-   .dot {
-       width: 15px;
-       height: 15px;
-   }
+    .dot {
+        width: 12px;
+        height: 12px;
+    }
 
-   .porto-seguro {
-       top: 300px;
-       left: 620px;
-   }
+    .porto-seguro {
+        top: 350px;
+        left: 720px;
+    }
+    
+    .ubatuba {
+        top: 450px;
+        left: 620px;
+    }
+    
+    .florianopolis {
+        top: 510px;
+        left: 570px;
+    }
 
-   .ubatuba {
-       top: 360px;
-       left: 550px;
-   }
+    .modal {
+        width: 35%;
+        height: 30%;
+    }
 
-   .florianopolis {
-       top: 420px;
-       left: 510px;
-   }
+    .modal h1 {
+        font-size: 18px;
+    }
+
+    .close {
+        font-size: 2rem;
+    }
+
+    .register {
+        padding: 3% 10%;
+    }
+
+    .form {
+        font-size: 1rem;
+        gap: 10px;
+    }
+
+    .form input {
+        padding: 8px 40px;
+    }
+
+    #btn-register {
+        font-size: 18px;
+    }
 }
 
-/* Media query para largura máxima de 768px */
 @media (max-width: 768px) {
-   .map img {
-       width: 400px;
-   }
+    .map-title {
+        font-size: 1.2rem;
+        padding: 2%;
+    }
 
-   .dot {
-       width: 12px;
-       height: 12px;
-   }
+    .map img {
+        width: 50%;
+        padding: 10px;
+    }
 
-   .porto-seguro {
-       top: 250px;
-       left: 500px;
-   }
+    .dot {
+        width: 10px;
+        height: 10px;
+    }
 
-   .ubatuba {
-       top: 290px;
-       left: 450px;
-   }
+    .porto-seguro {
+        top: 230px;
+        left: 510px;
+    }
+    
+    .ubatuba {
+        top: 280px;
+        left: 450px;
+    }
+    
+    .florianopolis {
+        top: 320px;
+        left: 420px;
+    }
 
-   .florianopolis {
-       top: 330px;
-       left: 420px;
-   }
+    .modal {
+        width: 40%;
+        height: 35%;
+    }
+
+    .modal h1 {
+        font-size: 16px;
+    }
+
+    .close {
+        font-size: 1.5rem;
+    }
+
+    .register {
+        padding: 3% 10%;
+    }
+
+    .form {
+        font-size: 0.9rem;
+        gap: 10px;
+    }
+
+    .form input {
+        padding: 7px 30px;
+    }
+
+    #btn-register {
+        font-size: 16px;
+    }
 }
 
-/* Media query para largura máxima de 425px */
 @media (max-width: 425px) {
-   .map img {
-       width: 300px;
-   }
+    .map-title {
+        font-size: 1rem;
+        padding: 2%;
+    }
 
-   .dot {
-       width: 10px;
-       height: 10px;
-   }
+    .map img {
+        width: 90%;
+        padding: 5px;
+    }
 
-   .porto-seguro {
-       top: 200px;
-       left: 350px;
-   }
+    .dot {
+        width: 8px;
+        height: 8px;
+    }
 
-   .ubatuba {
-       top: 230px;
-       left: 310px;
-   }
+    .porto-seguro {
+        top: 230px;
+        left: 340px;
+    }
+    
+    .ubatuba {
+        top: 285px;
+        left: 280px;
+    }
+    
+    .florianopolis {
+        top: 325px;
+        left: 250px;
+    }
 
-   .florianopolis {
-       top: 260px;
-       left: 290px;
-   }
+    .modal {
+        width: 80%;
+        height: 40%;
+    }
+
+    .modal h1 {
+        font-size: 14px;
+    }
+
+    .close {
+        font-size: 1.2rem;
+    }
+
+    .register {
+        padding: 5% 10%;
+    }
+
+    .form {
+        font-size: 0.8rem;
+        gap: 8px;
+    }
+
+    .form input {
+        padding: 5px 20px;
+    }
+
+    #btn-register {
+        font-size: 14px;
+    }
 }
 
-/* Media query para largura máxima de 375px */
 @media (max-width: 375px) {
-   .map img {
-       width: 280px;
-   }
+    .map-title {
+        font-size: 0.9rem;
+        padding: 2%;
+    }
 
-   .dot {
-       width: 8px;
-       height: 8px;
-   }
+    .map img {
+        width: 90%;
+        padding: 5px;
+    }
 
-   .porto-seguro {
-       top: 190px;
-       left: 310px;
-   }
+    .dot {
+        width: 7px;
+        height: 7px;
+    }
 
-   .ubatuba {
-       top: 220px;
-       left: 280px;
-   }
+    .porto-seguro {
+        top: 200px;
+        left: 300px;
+    }
+    
+    .ubatuba {
+        top: 250px;
+        left: 250px;
+    }
+    
+    .florianopolis {
+        top: 290px;
+        left: 220px;
+    }
 
-   .florianopolis {
-       top: 250px;
-       left: 260px;
-   }
+    .modal h1 {
+        font-size: 12px;
+    }
+
+    .close {
+        font-size: 1rem;
+    }
+
+    .register {
+        padding: 5% 10%;
+    }
+
+    .form {
+        font-size: 0.7rem;
+        gap: 8px;
+    }
+
+    .form input {
+        padding: 5px 20px;
+    }
+
+    #btn-register {
+        font-size: 12px;
+    }
 }
 
-/* Media query para largura máxima de 320px */
-@media (max-width: 320px) {
-   .map img {
-       width: 260px;
-   }
+@media (max-width: 325px) {
+    .map-title {
+        font-size: 0.8rem;
+        padding: 2%;
+    }
 
-   .dot {
-       width: 6px;
-       height: 6px;
-   }
+    .map img {
+        width: 90%;
+        padding: 5px;
+    }
 
-   .porto-seguro {
-       top: 180px;
-       left: 280px;
-   }
+    .dot {
+        width: 6px;
+        height: 6px;
+    }
 
-   .ubatuba {
-       top: 200px;
-       left: 250px;
-   }
+    .porto-seguro {
+        top: 180px;
+        left: 255px;
+    }
+    
+    .ubatuba {
+        top: 215px;
+        left: 210px;
+    }
+    
+    .florianopolis {
+        top: 245px;
+        left: 190px;
+    }
 
-   .florianopolis {
-       top: 220px;
-       left: 240px;
-   }
+    .modal {
+        width: 90%;
+        height: 50%;
+    }
+
+    .modal h1 {
+        font-size: 10px;
+    }
+
+    .close {
+        font-size: 0.8rem;
+    }
+
+    .register {
+        padding: 5% 10%;
+    }
+
+    .form {
+        font-size: 0.6rem;
+        gap: 8px;
+    }
+
+    .form input {
+        padding: 5px 20px;
+    }
+
+    #btn-register {
+        font-size: 10px;
+    }
 }
