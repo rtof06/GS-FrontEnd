@@ -119,3 +119,10 @@ header {
 .img-redes {
    width: 10%;
 }
+
+@media (max-width: 600px) {
+   .pags {
+      font-size: 16px;
+   }
+}
+
