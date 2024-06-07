@@ -34,7 +34,19 @@ header {
    font-size: 1.2rem;
 }
 
-.nav-list {
+.menu-responsivo {
+   cursor: pointer;
+   display: none;
+}
+
+.menu-responsivo div {
+   width: 32px;
+   height: 2px;
+   background: var(--main-color);
+   margin: 8px;
+}
+
+.nav-listas {
    list-style: none;
    display: flex;
    align-items: center;
@@ -120,10 +132,37 @@ header {
    width: 10%;
 }
 
-@media (max-width: 600px) {
-   .pags {
+@media (max-width: 800px) {
+   .nav-listas {
+      position: absolute;
+      top: 12vh;
+      right: 0;
+      width: 30vw;
+      height: 20vh;
+      border-radius: 0 0 10px 10px;
+      background-color: #ffff;
+      flex-direction: column;
+      align-items: center;
       font-size: 16px;
+      opacity: 0;
+      transition: opacity 0.3s ease-in, visibility 0.3s ease-in;
+      visibility: hidden;
    }
-}
+
+   .nav-listas.nav-list-active {
+      opacity: 1;
+      visibility: visible;
+   }
+
+   .pags {
+      margin: 0;
+      opacity: 1;
+   }
+
+   .menu-responsivo {
+      display: block;
+      cursor: pointer;
+   }
+
 }
 

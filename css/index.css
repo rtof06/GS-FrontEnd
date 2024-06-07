@@ -3,15 +3,15 @@
 }
 
 .main-title {
-   background-color: rgba(0, 24, 47, 0.4);
-   box-shadow: 10px 10px 10px rgba(0, 24, 47, 0.5);
+   padding-bottom: 10px;
 }
 
 .main-title h1{
-   font-size: 2rem;
+   font-size: 3rem;
 }
 
 .pictures {
+   padding-top: 50px;
    color: #FFF;
    text-align: center;
    font-size: 2rem;
@@ -127,13 +127,13 @@
 
 .description {
    padding-top: 4%;
-   font-size: 1rem;
+   font-size: 1.3rem;
 }
 
 .about {
    color: #FFF;
    text-align: center;
-   font-size: 1.2rem;
+   font-size: 2rem;
 }
 
 .form {
@@ -253,6 +253,53 @@
       padding-top: 0;
       font-size: 12px;
    }
+}
 
+@media (max-width:600px) {
+   .main-title h1{
+      font-size: 1.3rem;
+   }
 
+   .about h2{
+      font-size: 1.6rem;
+   }
+}
+
+@media (max-width:510px) {
+   .slide img {
+      width: 400px;
+   }
+}
+
+@media (max-width:405px) {
+
+   .slider {
+      height: 350px;
+   }
+
+   .slide img {
+      width: 300px;
+   }
+
+   .auto-navigation {
+      margin-top: 280px;
+   }
+
+   .manual-navigation {
+      margin-top: 280px;
+   }
+
+   .about h2{
+      font-size: 1.3rem;
+   }
+}
+
+@media (max-width:320px) {
+   .auto-navigation {
+      margin-top: 310px;
+   }
+
+   .manual-navigation {
+      margin-top: 310px;
+   }
 }
