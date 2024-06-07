@@ -2,8 +2,8 @@ let counter = 1;
 document.getElementById("radio1").checked = true;
 
 setInterval( function(){
-   // nextImage();
-}, 4000)
+   nextImage();
+}, 5000)
 
 function nextImage(){
    counter++;

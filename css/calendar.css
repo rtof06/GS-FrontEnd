@@ -22,8 +22,8 @@
 
 .dot {
     position: absolute;
-    width: 20px;
-    height: 20px;
+    width: 40px;
+    height: 40px;
     background-color: #ff0000;
     border-radius: 50%;
 }
@@ -126,11 +126,6 @@
         padding: 20px;
     }
 
-    .dot {
-        width: 15px;
-        height: 15px;
-    }
-
     .porto-seguro {
         top: 550px;
         left: 1070px;
@@ -186,11 +181,6 @@
     .map img {
         width: 60%;
         padding: 15px;
-    }
-
-    .dot {
-        width: 12px;
-        height: 12px;
     }
 
     .porto-seguro {
@@ -250,11 +240,6 @@
         padding: 10px;
     }
 
-    .dot {
-        width: 10px;
-        height: 10px;
-    }
-
     .porto-seguro {
         top: 230px;
         left: 510px;
@@ -301,6 +286,30 @@
     }
 }
 
+@media (max-width:550px) {
+
+    .dot {
+        width: 30px;
+        height: 30px;
+    }
+
+    .porto-seguro {
+        top: 180px;
+        left: 340px;
+    }
+    
+    .ubatuba {
+        top: 225px;
+        left: 280px;
+    }
+    
+    .florianopolis {
+        top: 275px;
+        left: 250px;
+    }
+
+}
+
 @media (max-width: 425px) {
     .map-title {
         font-size: 1rem;
@@ -310,11 +319,6 @@
     .map img {
         width: 90%;
         padding: 5px;
-    }
-
-    .dot {
-        width: 8px;
-        height: 8px;
     }
 
     .porto-seguro {
@@ -374,11 +378,6 @@
         padding: 5px;
     }
 
-    .dot {
-        width: 7px;
-        height: 7px;
-    }
-
     .porto-seguro {
         top: 200px;
         left: 300px;
@@ -429,11 +428,6 @@
     .map img {
         width: 90%;
         padding: 5px;
-    }
-
-    .dot {
-        width: 6px;
-        height: 6px;
     }
 
     .porto-seguro {

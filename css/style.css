@@ -48,6 +48,7 @@ header {
 
 .nav-listas {
    list-style: none;
+   background-size:contain;
    display: flex;
    align-items: center;
    padding: 0;
