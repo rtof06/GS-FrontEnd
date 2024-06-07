@@ -172,7 +172,39 @@
     }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1240px) {
+
+    .porto-seguro {
+        top: 30%;
+        left: 85%;
+    }
+    
+    .ubatuba {
+        top: 50%;
+        left: 85%;
+    }
+    
+    .florianopolis {
+        top: 70%;
+        left: 85%;
+    }
+
+    .modal {
+        width: 50%;
+        height: 45%;
+    }
+
+    .modal h1 {
+        font-size: 20px;
+    }
+
+    .close {
+        font-size: 2.5rem;
+    }
+}
+
+
+@media (max-width: 1115px) {
     .map-title {
         font-size: 1.5rem;
         padding: 2%;
@@ -181,30 +213,11 @@
     .map img {
         width: 60%;
         padding: 15px;
-    }
-
-    .porto-seguro {
-        top: 350px;
-        left: 720px;
-    }
-    
-    .ubatuba {
-        top: 450px;
-        left: 620px;
-    }
-    
-    .florianopolis {
-        top: 510px;
-        left: 570px;
-    }
+    }    
 
     .modal {
-        width: 35%;
-        height: 30%;
-    }
-
-    .modal h1 {
-        font-size: 18px;
+        width: 50%;
+        height: 45%;
     }
 
     .close {
@@ -240,24 +253,9 @@
         padding: 10px;
     }
 
-    .porto-seguro {
-        top: 230px;
-        left: 510px;
-    }
-    
-    .ubatuba {
-        top: 280px;
-        left: 450px;
-    }
-    
-    .florianopolis {
-        top: 320px;
-        left: 420px;
-    }
-
     .modal {
-        width: 40%;
-        height: 35%;
+        width: 50%;
+        height: 45%;
     }
 
     .modal h1 {
@@ -293,47 +291,17 @@
         height: 30px;
     }
 
-    .porto-seguro {
-        top: 180px;
-        left: 340px;
-    }
-    
-    .ubatuba {
-        top: 225px;
-        left: 280px;
-    }
-    
-    .florianopolis {
-        top: 275px;
-        left: 250px;
-    }
-
 }
 
-@media (max-width: 425px) {
+@media (max-width: 480px) {
     .map-title {
         font-size: 1rem;
         padding: 2%;
     }
 
     .map img {
-        width: 90%;
+        width: 70%;
         padding: 5px;
-    }
-
-    .porto-seguro {
-        top: 230px;
-        left: 340px;
-    }
-    
-    .ubatuba {
-        top: 285px;
-        left: 280px;
-    }
-    
-    .florianopolis {
-        top: 325px;
-        left: 250px;
     }
 
     .modal {
@@ -373,28 +341,8 @@
         padding: 2%;
     }
 
-    .map img {
-        width: 90%;
-        padding: 5px;
-    }
-
-    .porto-seguro {
-        top: 200px;
-        left: 300px;
-    }
-    
-    .ubatuba {
-        top: 250px;
-        left: 250px;
-    }
-    
-    .florianopolis {
-        top: 290px;
-        left: 220px;
-    }
-
     .modal h1 {
-        font-size: 12px;
+        font-size: 16px;
     }
 
     .close {
@@ -425,33 +373,13 @@
         padding: 2%;
     }
 
-    .map img {
-        width: 90%;
-        padding: 5px;
-    }
-
-    .porto-seguro {
-        top: 180px;
-        left: 255px;
-    }
-    
-    .ubatuba {
-        top: 215px;
-        left: 210px;
-    }
-    
-    .florianopolis {
-        top: 245px;
-        left: 190px;
-    }
-
     .modal {
         width: 90%;
         height: 50%;
     }
 
     .modal h1 {
-        font-size: 10px;
+        font-size: 16px;
     }
 
     .close {
